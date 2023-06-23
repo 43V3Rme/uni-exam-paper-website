@@ -1,3 +1,115 @@
-<header>
+<!DOCTYPE html>
+<html lang="en-tr">
+    <title>main</title>
+    <link rel="icon" type="image/x-icon" href="images/bilkent_logo.png">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {background-color: rgb(255, 255, 255);}
+        h1   {color: rgb(0, 0, 0);}
+        p {
+        }
+        img {
+            width: 30%;
+            height: auto;
+            max-width: 100%;
+            display: block;
+            margin:5%;
+            float:left
+        }
+        .city {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        </style>
+        <script>
+            function changeText() {
+              var button = document.getElementById("myButton");
+              if (button.innerText === "Click me!") {
+                button.innerText = "Text changed!";
+              } else {
+                button.innerText = "Click me!";
+              }
+            }
+          </script>
+    </head>
+    <body>
+        <a href="https://chess.com">
+            <img src="images/chess.png" alt="chess">
+        </a>
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+        <p2 style="color:rgba(0, 255, 0)">This is a green paragraph.</p2>
+        <p title="this has a title">This is a paragraph with a title</p>
+        <a href="https://google.com"> this is a link to google</a>
 
-</header>
+
+        <p>
+        This paragraph
+        contains a lot of lines
+        in the source code,
+        but the browser
+        ignores it.
+        </p>
+        
+        <p>
+        This paragraph
+        contains         a lot of spaces
+        in the source         code,
+        but the        browser
+        ignores it.
+        </p>
+
+        <p> This is has a line under it </p>
+        <hr>
+
+        <p>this is <br> written in <br> multiple lines</p>
+
+        <p style="background-color:rgb(122, 197, 224);">This is a paragraph with a background color.</p>
+
+        <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">This is a paragraph with a font style.</p>
+
+        <p style="text-align:center">Centered paragraph.</p>
+
+        <p>
+            <b>This is bold</b>
+            and
+            <i>This <mark>is</mark> in italic</i>
+        </p>
+        <p>this is <sub>subscipt</sub> and <sup>superscript</sup></p> 
+    
+        <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+        <!-- This is a comment -->
+
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+        <div class="city">
+            <h2>London</h2>
+            <p>London is the capital of England.</p>
+        </div>  
+        <div class="city">
+            <h2>Paris</h2>
+            <p>Paris is the capital of France.</p>
+        </div>
+
+        <button id="myButton" class="button" onclick="changeText()">Click me!</button>
+    </body>
+</html>
